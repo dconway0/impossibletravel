@@ -79,27 +79,4 @@ if choice == 2:
         rowPlace += 1
     print(logCount)
     f.close()        
-'''
-f = open("ai.txt", "w")
-
-logCount = 0
-userLogs = {user: [] for user in uniqueUsers}
-for row in sorted_data:
-    userLogs[row['username']].append(row)
-print(userLogs)
-
-for user, logs in userLogs.items():
-    for i in range(1, len(logs)):
-        currLog = logs[i-1]
-        nextLog = logs[i]
-
-        if currLog['location'] != nextLog['location']:
-            #print("impossible travel") write log info to unique output file and then test for equivalence with my output
-            f.write(f'{currLog['username']}: {currLog['location']} to {nextLog['location']}\n')
-            logCount += 1
-
-    completedUsers.append(user)
-print(logCount)
-f.close()
-'''
 
